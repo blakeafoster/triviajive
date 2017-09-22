@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia Jive</title>
+    <meta property="og:url"           content="http://www.triviajive.me.ht/index.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:description"   content="Can you get 10 out of 10?" />
+  <meta property="og:image" content="https://www.nypl.org/sites/default/files/8435321969_c1eea0631a_o.jpg" />
+<meta property="og:image:secure_url" content="https://www.nypl.org/sites/default/files/8435321969_c1eea0631a_o.jpg" /> 
+<meta property="og:image:type" content="image/jpeg" /> 
+<meta property="og:image:width" content="400" /> 
+<meta property="og:image:height" content="300" />
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+    <div class="endscreen">
+    <h1 id="end"></h1>
+   <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.triviajive.me.ht&layout=button_count&size=large&mobile_iframe=true&width=84&height=28&appId" width="84" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <a href="index.html"><h3>Try Again?</h3></a>
+    </div>
+    <body>
+        <progress value="0" max="14" id="progressBar"></progress>
+        <h1 class="title">Trivia Jive</h1>
+        <h3 id="heading">Click to change category</h3>
+        
+        <div class="category-wrap">
+        <H3 id="category"></H3>
+        </div>
+          
+
+    <button id="category_select">Go!</button>
+        <div class="question-container">
+        <h3 id="question"></h3>
+        </div>
+        <div class="answer-container">
+        <button class="guess0 flex-item" id="choice0"></button>
+            <button class="guess1" id="choice1"></button>
+            <button class="guess2" id="choice2"></button>
+            <button class="guess3" id="choice3"></button>
+        </div>
+        
+    
+       <script src="js/catselector.js"></script>
+        <script src="js/quiz.js"></script>
+        
+    </body>
+    
+</html>
