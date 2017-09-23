@@ -18,7 +18,8 @@ function endquiz(){
    
 
 };
-    
+
+// Randomly order questions so that the correct answer isn't always at the end of the list of buttons.
 function randomFlex(){
  $(".guess3").css("order", (Math.floor(Math.random() * 7)).toString());
                   $(".guess2").css("order", (Math.floor(Math.random() * 7)).toString()); 
@@ -29,7 +30,7 @@ var quizAction = {
     displayNext: function () {
             this.displayQuestion();
             this.displayChoices();
-            randomFlex();
+            randomFlex(); // Line 23
 
 
         },
